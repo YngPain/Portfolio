@@ -1,37 +1,54 @@
-*{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
-    background-color: #1A232C;
     color: white !important;
+
 }
 
-img{
+body {
+    background: #0F2027;
+    /* fallback for old browsers */
+    background-image: -webkit-linear-gradient(#2C5364, #203A43, #0F2027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background-image: linear-gradient(#2C5364, #203A43, #0F2027);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100vw;
+    height: 100vh;
+}
+
+img {
     height: 55px;
     width: 55px;
     display: flex;
 }
 
-header{
+header {
+    background-color: #1A232C;
     text-transform: uppercase;
 }
 
 
-.nav-link{
+.nav-link {
     display: flex;
     transition: 0.2s ease-in-out;
 }
 
-.nav-link.active{
+.nav-link.active {
     color: #ff3131 !important;
 
 }
 
-.nav-item:hover{
+.nav-item:hover {
     border-bottom: 2px solid #800000;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     transform: scale(1.05);
     color: #dc4c4c !important;
 }
 
-
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
