@@ -18,6 +18,8 @@ body {
     height: 100vh;
 }
 
+/*----------header-------*/
+
 img {
     height: 55px;
     width: 55px;
@@ -52,3 +54,93 @@ header {
 .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+
+/*---------home--------*/
+
+
+.home {
+    padding: 20px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row;
+    }
+    
+    .left {
+      flex: 1;
+      margin-right: 20px;
+    }
+    
+    .right {
+      flex: 1;
+    }
+  }
+  
+  .homeImg {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+  }
+  
+  @media (max-width: 767px) {
+    .homeImg {
+      position: relative;
+      top: 0;
+      transition: transform 0.3s, top 0.3s;
+    }
+    
+    .container.flex {
+      flex-direction: column-reverse;
+    }
+    
+    .left {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 479px) {
+    .homeImg {
+      transition: transform 0.3s, top 0.3s;
+    }
+  }
+  
+  @media (max-width: 319px) {
+    .homeImg {
+      transition: none;
+    }
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left, .right {
+    width: 50%;
+    position: relative;
+    padding: 30px;
+  }
+
+  p {
+    margin-top: 20px;
+    line-height: 30px;
+  }
+  .home {
+    padding-top: 5%;
+  }
+  
+  .home .left {
+    padding-top: 10%;
+  }
+
